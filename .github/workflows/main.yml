@@ -34,6 +34,7 @@ jobs:
               -r cli,htmlextra
 
       - name: Newman Report
+        if: always() #ensure archive section gets exucuted even if we have failure tests
         uses: actions/upload-artifact@v5.0.0
         with:
           name: Newman Report
