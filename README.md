@@ -62,6 +62,6 @@ newman run 'Pheonix-Inwarranty-Flow Collection.postman_collection.json' \
               -e QA.postman_environment.json \
               -d testData.csv \
               -r cli,htmlextra \
-              --reporter-htmlextra-export "./newman/index.html"
+              --reporter-htmlextra-export ./newman/index.html
 ```
 
